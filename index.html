@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Scrolling Nav - Start Bootstrap Template</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="The Aces">
+        <meta name="author" content="Natali Anderson">
+        <title>The Aces</title>
+        <link rel="icon" type="image/x-icon" href="assets/HeartLogo_Filled_White.png">
   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet">
   <!-- END LOADING BOOTSTRAP CSS -->
 
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
       
     <!-- Custom styles -->
     <link href="custom.css" rel="stylesheet">
@@ -19,72 +23,261 @@
 
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <!-- The hrefs here must match the ID attribute of the corresponding divs/containers -->
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div id="above-nav" class="text-center">
+        <img src="assets/HeartLogo_Filled_White.png" alt="aces heart logo" height=177 width=150>
+    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#about">About the Band</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#albums">Albums</a>
+          </li>
+          <li class="nav-item px-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Best Songs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#lib">Lovin' is Bible</a></li>
+              <li><a class="dropdown-item" href="#amn">All Mean Nothing</a></li>
+              <li><a class="dropdown-item" href="#gmmwd">Girls Make Me Wanna Die</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
         <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Welcome to Scrolling Nav</h1>
-                <p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p>
-                <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>
+        <header class="text-white">
+            <div class="container px-4 py-5 text-left">
             </div>
         </header>
-        <!-- About section - the ID attribute value here must match the corresponding href in navigation -->
-        <!-- For example - this section with id="about" must match the href="#about" in the navigation -->
-        <section id="about">
-            <div class="container px-4">
+        <!-- About section -->
+           <section id="about">
+           <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3>The Band</h3>
+                    <ol><li>Katie Henderson</li>
+                        <li>McKenna Petty</li>
+                        <li> Alisa Ramirez</li>
+                        <li>Cristal Ramirez</li></ol>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3>Band History</h3>
+                    <p>The Band formed in 2008 starting with the Ramirez sisters, Cristal and Alisa. They recruited members McKenna and Katie and formed the Blue Aces. They are now known as The aces and have 3 studio albums and 3 EP's released.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>       
+        </section>
+
+<!-- ALBUMS section-->
+        <section id="albums">
+            <div class="container px-2 text-center">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>About this page</h2>
-                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-                        <ul>
-                            <li>Clickable nav links that smooth scroll to page sections</li>
-                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                        </ul>
+                    <div class="col-lg-11">
+                        <h2>The Aces Albums</h2>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Services section-->
-        <section class="bg-light" id="services">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Services we offer</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+
+ <div class="album py-5">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="assets/wmhfv.jpg" alt="when my heart felt volcanic album cover by the aces" class="thumbnails">
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">View</button>
+                  
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center">
+                            <img src="assets/wmhfv.jpg" class="img-fluid" alt="when my heart felt volcanic album cover by the aces" width="1000" height="320">
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="assets/umi.jpeg" alt="under my influence album cover by the aces" class="thumbnails">
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+                  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                             <div class="modal-body text-center">
+                            <img src="assets/umi.jpeg" class="img-fluid" alt="under my influence album cover by the aces" width="1000" height="320">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="assets/ilyfsl.jpeg" alt="i've loved you for so long album cover" class="thumbnails">
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal3">View</button>
+                  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                           <div class="modal-body text-center">
+                            <img src="assets/ilyfsl.jpeg" class="img-fluid" alt="i've loved you for so long album cover" width="1000" height="320">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                       
+        </section> 
+        <!-- END MODAL SECTION -->
+    
+        <!-- SONGS section-->
+         <section id="lib">
+            <h2 class="text-center">Best Songs</h2>
+            <div class="container px-4">
+
+                <div class="row gx-4 justify-content-left ">
+                    <div class="col-lg-6 lovein">
+                        <h3>Lovin' Is Bible</h3>
+                        <p>Lovin' is bible was the first Aces song I ever heard. It is a song that I always find myself coming back to because it is just so good. It is happy for spring and summer but can also be an uplifting mood for fall and winter!</p>
+                    </div>
+
+                     <div class="col-lg-6">
+                       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Nj7fiQsU9yX1knVNUc6uB?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <!-- Contact section-->
-        <section id="contact">
+        
+       <section id="amn">
             <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Contact us</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+
+                <div class="row gx-4 justify-content-left ">
+
+                     <div class="col-lg-6">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/61h5pknv1LbeTODmaqHcmH?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
+
+                     <div class="col-lg-6 lovein">
+                        <h3>All Mean Nothing</h3>
+                        <p>This song is so amazing. I recently rediscovered All Mean Nothing and it is just one of those songs you can't necessarily relate to but you will sing it like you wrote it when you are alone in the car. A must listen, badass breakup song.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
+       
+         <section id="gmmwd">
+            <div class="container px-4">
+
+                <div class="row gx-4 justify-content-left ">
+                    <div class="col-lg-6 lovein">
+                        <h3>Girls Make Me Wanna Die</h3>
+                        <p>Amazing queer pop/rock song about liking someone who doesn't feel the same way. So amazing and so fun to see and dance to live. One of my favorite songs off their latest album.</p>
+                    </div>
+
+                     <div class="col-lg-6">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7G5BQ47NKi7AoKvFzP3ouA?utm_source=generator" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        <footer class="py-5">
+           <div class="container px-4">
+               <div class="row gx-4">
+                 
+                  <div class="col-md-3 m-0 text-center text-black"><p>&copy; The Aces 2023</p>
+                  </div>
+
+                    <div class="col-md-9 d-inline-flex justify-content-end">
+                    <ul>
+                      <li><h3>Citations</h3></li>
+                        <li><a href="https://www.theacesofficial.com/">Logo and Favicon</a></li>
+                        <li><a href="https://www.instagram.com/p/CyrEfMXOTq4/">Header Image</a></li>
+                        <li><a href="https://open.spotify.com/album/2lsQE89fPFInz2J62K6waw">When My Heart Felt Volcanic Album Cover & Lovin' is Bible song embed</a></li>
+                        <li><a href="https://open.spotify.com/album/0KPgrwFMQKpRaBcmeLg1Rw">Under My Influence Album Cover & All Mean Nothing embed</a></li>
+                        <li><a href="https://open.spotify.com/album/5LO06DFO56CESiQ6BjGsVJ">I've Loved You For So Long Album Cover & Girls Make Me Wanna Die embed</a></li>
+                      </ul>
+                    </div>
+
+                </div>
+             </div>
         </footer>
 
 

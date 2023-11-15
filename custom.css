@@ -1,1 +1,141 @@
 /* ADD YOUR CUSTOM CSS TO THIS FILE */
+
+header {
+	background-image: url("assets/acesheader.png");
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 15em;
+}
+
+#above-nav {
+	background-color: #262121;
+	padding-top: 20px;
+}
+
+.navbar {
+	background-color: #262121;
+}
+
+#about ol {
+	list-style: none;
+	padding-left: 0px;
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+#about {
+	padding-bottom: .5em;
+	padding-top: 1em;
+	background-color: #262121;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 1rem;
+}
+
+.carousel-caption {
+  bottom: 1rem;
+  z-index: 10;
+  color: #EDE7DF;
+  top: 0;
+  bottom: auto;
+}
+
+/* Declare heights because of positioning of img element */
+
+@media only screen and (max-width: 1024px) {
+  #values {
+  height: 28rem !important;
+}
+}
+
+.carousel-item {
+  height: 15rem;
+}
+
+ 
+#navbarNavDropdown {
+	justify-content: right;
+}
+
+#lib {
+	background-color: #262121;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	color: #EDE7DF;
+}
+
+.lovein {
+	margin:auto;
+}
+
+#amn {
+	background-color: #262121;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	color: #EDE7DF;
+}
+
+#gmmwd {
+	background-color: #262121;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	color: #EDE7DF;
+}
+
+#albums {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color: #EDE7DF;
+}
+
+#albums .card {
+	background-color: #262121;
+}
+
+
+h1 {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 2em;
+}
+
+
+h3 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 2em;
+}
+
+body {
+	font-family: 'Space Mono', monospace, cursive;
+	font-size: 1em;
+}
+
+footer {
+	background-color: #EDE7DF;
+	color: black;
+}
+
+iframe {
+	width: 100% ;
+	height: 352px; 
+}
+
+a {
+	color: #262121;
+}
+
+
+
+
+
+
